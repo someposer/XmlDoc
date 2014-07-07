@@ -1,0 +1,23 @@
+[
+    { "keys": ["enter"], "command": "xmldoc", "args": {"key": "enter"}, "context" :
+        [
+            { "key": "selector", "operator": "equal", "operand": "source.cs" },
+            { "key": "setting.auto_indent", "operator": "equal", "operand": true },
+            { "key": "preceding_text", "operator": "regex_contains", "operand": "^\\s*\\/{3}.*$", "match_all": true }
+        ]
+    },
+    { "keys": ["keypad_enter"], "command": "xmldoc", "args": {"key": "enter"}, "context" :
+        [
+            { "key": "selector", "operator": "equal", "operand": "source.cs" },
+            { "key": "setting.auto_indent", "operator": "equal", "operand": true },
+            { "key": "preceding_text", "operator": "regex_contains", "operand": "^\\s*\\/{3}.*$", "match_all": true }
+        ]
+    },
+    { "keys": ["/"], "command": "xmldoc", "args": {"key": "/"}, "context" :
+        [
+            { "key": "selector", "operator": "equal", "operand": "source.cs" },
+            { "key": "setting.auto_indent", "operator": "equal", "operand": true },
+            { "key": "preceding_text", "operator": "regex_contains", "operand": "^\\s*\\/{2}$", "match_all": true }
+        ]
+    }
+]
